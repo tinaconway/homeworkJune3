@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="main.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+
+
+
+  <h3>Let's Do Some Math!</h3>
+
+  <input type="text" name="num1" id="num_one" />
+  <br /><br />
+  <input type="text" name="num2" id="num_two" />
+  <br /><br />
+
+
+  <button type="button" class="add" id="addMain" name="button">Add</button>
+  <button type="button" class="subtract" id="subtractMain" name="button">Subtract</button>
+  <button type="button" class="multiply" id="multiplyMain" name="button">Multiply</button>
+  <button type="button" class="divide" id="divideMain" name="button">Divide</button>
+
+  <div class="answer">
+    <br />
+    Answer: <span id="answer"></span>
+  </div>
+
+<div class="container">
+<div id = "calculator">
+
+<div class="row" id = "row1">
+  <div class="col-md-3"><button type="button" class="numButton" id="clear">C</button></div>
+  <div class="col-md-9"><div class="answerCalc"><span id="display"></span></div></div>
+</div>
+
+<div class="row">
+  <div class="col-md-3"><button type="button" class="numButton" id="seven">7</button></div>
+  <div class="col-md-3"><button type="button" class="numButton" id="eight">8</button></div>
+  <div class="col-md-3"><button type="button" class="numButton" id="nine">9</button></div>
+  <div class="col-md-3"><button type="button" class="operator" id="divide">/</button></div>
+
+</div>
+
+<div class="row">
+  <div class="col-md-3"><button type="button" class="numButton" id="four">4</button></div>
+  <div class="col-md-3"><button type="button" class="numButton" id="five">5</button></div>
+  <div class="col-md-3"><button type="button" class="numButton" id="six">6</button></div>
+  <div class="col-md-3"><button type="button" class="operator" id="multiply">X</button></div>
+</div>
+
+<div class="row">
+  <div class="col-md-3"><button type="button" class="numButton" id="one">1</button></div>
+  <div class="col-md-3"><button type="button" class="numButton" id="two">2</button></div>
+  <div class="col-md-3"><button type="button" class="numButton" id="three">3</button></div>
+  <div class="col-md-3"><button type="button" class="operator" id="subtract">-</button></div>
+</div>
+<div class="row" id ="row5">
+  <div class="col-md-3"><button type="button" class="numButton" id="zero">0</button></div>
+  <div class="col-md-3"><button type="button" class="numButton" id="point">.</button></div>
+  <div class="col-md-3"><button type="button" class="equalsCalc" id="equals">=</button></div>
+  <div class="col-md-3"><button type="button" class="operator" id="plus">+</button></div>
+</div>
+
+</div>
+</div>
+
+
+  <script type="text/javascript" src="bower_components/underscore/underscore.js"> </script>
+  <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"> </script>
+  <script type="text/javascript" src="data.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>
